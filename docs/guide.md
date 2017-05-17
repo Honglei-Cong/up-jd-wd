@@ -62,9 +62,9 @@ docker-compose up -d
 2. update generateCerts.sh
 
 >
-a. update INTER_CA_DOCKER
-b. update ORG_BASE
-c. update SERVER_CA_PORT
+* update INTER_CA_DOCKER
+* update ORG_BASE
+* update SERVER_CA_PORT
 
 3. execute generateCert.sh
 
