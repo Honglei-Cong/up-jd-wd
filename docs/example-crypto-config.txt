@@ -1,0 +1,130 @@
+crypto-config/
+|-- orderer
+|   |-- jd.ca
+|   |   `-- msp
+|   |       |-- admincerts
+|   |       |   `-- admin.jd.cert.pem
+|   |       |-- cacerts
+|   |       |   |-- ca.jd.cert.pem
+|   |       |   `-- ca.root.jd.cert.pem
+|   |       |-- keystore
+|   |       `-- signcerts
+|   |           `-- ca.jd.cert.pem
+|   |-- up.ca
+|   |   |-- ca
+|   |   |   |-- ca.root.up.cert.pem
+|   |   |   `-- ca.up.cert.pem
+|   |   |-- msp
+|   |   |   |-- admincerts
+|   |   |   |   `-- admin.up.cert.pem
+|   |   |   |-- cacerts
+|   |   |   |   |-- ca.root.up.cert.pem
+|   |   |   |   `-- ca.up.cert.pem
+|   |   |   |-- keystore
+|   |   |   `-- signcerts
+|   |   |       `-- ca.up.cert.pem
+|   |   |-- orderers
+|   |   |   `-- orderer.up.ca
+|   |   |       `-- msp
+|   |   |           |-- admincerts
+|   |   |           |   `-- admin.up.cert.pem
+|   |   |           |-- cacerts
+|   |   |           |   |-- ca.root.up.cert.pem
+|   |   |           |   `-- ca.up.cert.pem
+|   |   |           |-- keystore
+|   |   |           |   `-- orderer.up.key
+|   |   |           `-- signcerts
+|   |   |               `-- orderer.up.cert.pem
+|   |   `-- users
+|   |       `-- Admin@up.ca
+|   |           `-- msp
+|   |               |-- admincerts
+|   |               |   `-- ca.up.cert.pem
+|   |               |-- cacerts
+|   |               |   |-- ca.root.up.cert.pem
+|   |               |   `-- ca.up.cert.pem
+|   |               |-- keystore
+|   |               |   `-- admin.up.key
+|   |               `-- signcerts
+|   |                   `-- admin.up.cert.pem
+|   `-- wanda.ca
+|       `-- msp
+|           |-- admincerts
+|           |   `-- admin.wanda.cert.pem
+|           |-- cacerts
+|           |   |-- ca.root.wanda.cert.pem
+|           |   `-- ca.wanda.cert.pem
+|           |-- keystore
+|           `-- signcerts
+|               `-- ca.wanda.cert.pem
+`-- peerOrganizations
+    |-- org1.jd.ca
+    |   `-- msp
+    |       |-- admincerts
+    |       |   `-- admin.org1.jd.cert.pem
+    |       |-- cacerts
+    |       |   |-- ca.org1.jd.cert.pem
+    |       |   `-- ca.root.org1.jd.cert.pem
+    |       |-- keystore
+    |       `-- signcerts
+    |           `-- ca.org1.jd.cert.pem
+    |-- org1.up.ca
+    |   |-- ca
+    |   |   |-- ca.org1.up.cert.pem
+    |   |   `-- ca.root.org1.up.cert.pem
+    |   |-- msp
+    |   |   |-- admincerts
+    |   |   |   `-- admin.org1.up.cert.pem
+    |   |   |-- cacerts
+    |   |   |   |-- ca.org1.up.cert.pem
+    |   |   |   `-- ca.root.org1.up.cert.pem
+    |   |   |-- keystore
+    |   |   `-- signcerts
+    |   |       `-- ca.org1.up.cert.pem
+    |   |-- peers
+    |   |   |-- peer0.org1.up.ca
+    |   |   |   `-- msp
+    |   |   |       |-- admincerts
+    |   |   |       |   `-- admin.org1.up.cert.pem
+    |   |   |       |-- cacerts
+    |   |   |       |   |-- ca.org1.up.cert.pem
+    |   |   |       |   `-- ca.root.org1.up.cert.pem
+    |   |   |       |-- keystore
+    |   |   |       |   `-- peer0.org1.up.key
+    |   |   |       `-- signcerts
+    |   |   |           `-- peer0.org1.up.cert.pem
+    |   |   `-- peer1.org1.up.ca
+    |   |       `-- msp
+    |   |           |-- admincerts
+    |   |           |   `-- admin.org1.up.cert.pem
+    |   |           |-- cacerts
+    |   |           |   |-- ca.org1.up.cert.pem
+    |   |           |   `-- ca.root.org1.up.cert.pem
+    |   |           |-- keystore
+    |   |           |   `-- peer1.org1.up.key
+    |   |           `-- signcerts
+    |   |               `-- peer1.org1.up.cert.pem
+    |   `-- users
+    |       `-- Admin@org1.up.ca
+    |           `-- msp
+    |               |-- admincerts
+    |               |   `-- ca.org1.up.cert.pem
+    |               |-- cacerts
+    |               |   |-- ca.org1.up.cert.pem
+    |               |   `-- ca.root.org1.up.cert.pem
+    |               |-- keystore
+    |               |   `-- admin.org1.up.key
+    |               `-- signcerts
+    |                   `-- admin.org1.up.cert.pem
+    `-- org1.wanda.ca
+        `-- msp
+            |-- admincerts
+            |   `-- admin.org1.wanda.cert.pem
+            |-- cacerts
+            |   |-- ca.org1.wanda.cert.pem
+            |   `-- ca.root.org1.wanda.cert.pem
+            |-- keystore
+            `-- signcerts
+                `-- ca.org1.wanda.cert.pem
+
+
