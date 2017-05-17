@@ -1,2 +1,2 @@
 # up-jd-wd
-Three-Party Fabric Setup
+Three-Party Fabric Setup Guide
