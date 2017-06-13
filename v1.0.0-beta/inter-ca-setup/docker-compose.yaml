@@ -1,0 +1,40 @@
+version: '2'
+
+services:
+
+  up-inter-ca:
+    container_name: up-inter-ca
+    image: hyperledger/fabric-ca
+    command: /usr/local/bin/fabric-ca-server start -b admin2:adminpw2 -u http://UPInterCA:adminpw@10.213.33.174:7054
+    volumes:
+    - ./fabric-ca-server-up:/etc/hyperledger/fabric-ca-server
+    ports:
+      - 7055:7054
+
+  jd-inter-ca:
+    container_name: jd-inter-ca
+    image: hyperledger/fabric-ca
+    command: /usr/local/bin/fabric-ca-server start -b admin2:adminpw2 -u http://JDInterCA:adminpw@10.213.33.174:7054
+    volumes:
+    - ./fabric-ca-server-jd:/etc/hyperledger/fabric-ca-server
+    ports:
+      - 7056:7054
+
+  wanda-inter-ca:
+    container_name: wanda-inter-ca
+    image: hyperledger/fabric-ca
+    command: /usr/local/bin/fabric-ca-server start -b admin2:adminpw2 -u http://WandaInterCA:adminpw@10.213.33.174:7054
+    volumes:
+    - ./fabric-ca-server-wanda:/etc/hyperledger/fabric-ca-server
+    ports:
+      - 7057:7054
+
+  cmb-inter-ca:
+    container_name: cmb-inter-ca
+    image: hyperledger/fabric-ca
+    command: /usr/local/bin/fabric-ca-server start -b admin2:adminpw2 -u http://CmbInterCA:adminpw@10.213.33.174:7054
+    volumes:
+    - ./fabric-ca-server-cmb:/etc/hyperledger/fabric-ca-server
+    ports:
+      - 7058:7054
+
